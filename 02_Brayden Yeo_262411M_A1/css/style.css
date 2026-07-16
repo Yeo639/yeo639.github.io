@@ -1,0 +1,324 @@
+/* css for general */
+
+body{background-image:url("../Images/copilot_background.png");/* https://copilot.microsoft.com/shares/5smKMiuqmtFmxgtEcrYGa */
+	background-size:cover;
+	background-position:center;
+	min-height:100vh;
+	box-sizing:border-box;
+	margin:0;
+	font-family:"Story Script"}
+	
+nav{background:#CBCBCB;
+	padding:10px 0;
+	margin:0;}
+	
+.hyperlink{list-style-type:none;
+	width:120px;
+	display:inline-block;}
+	
+.sub_hyperlink{list-style-type:none;
+	width:140px;
+	display:inline-block;
+	float:right;
+	margin-right:40px}
+	
+a{color:black;
+	text-decoration:none;
+	font-size:20px}
+
+/*css for about me*/
+.aboutme_body header{text-align:center}
+
+#aboutme_main{display:grid;
+	grid-template-columns: 10% 15% 25% 15% 25% 10%;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	font-size:22px}
+	
+#aboutme_main section{background:#6D8196;
+	margin:20px;
+	padding:15px;
+	border:2px solid #363636;}
+
+#aboutme_main article{background:#6D8196;
+	margin:20px;
+	padding:15px;
+	border:2px solid #363636;}
+	
+#abtme_intro{grid-column:2/6;
+	grid-row:1/2}
+	
+#abtme_inspiration{grid-column:2/6;
+	grid-row:2/3}
+	
+#strength{grid-column:2/3;
+	grid-row:3/6;
+	font-size:28px}
+	
+#str1{grid-column:3/4;
+	grid-row:3/4}
+	
+#str2{grid-column:3/4;
+	grid-row:4/5}
+	
+#str3{grid-column:3/4;
+	grid-row:5/6}	
+	
+	
+#weakness{grid-column:4/5;
+	grid-row:3/6;
+	font-size:26px}
+	
+#wkn1{grid-column:5/6;
+	grid-row:3/4}
+	
+#wkn2{grid-column:5/6;
+	grid-row:4/5}
+	
+@media(max-width:1280px){
+	#aboutme_main{display:grid;
+		grid-template-columns: 15% 35% 35% 15%;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		font-size:20px}
+		
+	#aboutme_main section{background:#6D8196;
+		margin:15px;
+		padding:10px;
+		border:2px solid #363636;}
+
+	#aboutme_main article{background:#6D8196;
+		margin:15px;
+		padding:10px;
+		border:2px solid #363636;}
+		
+	#abtme_intro{grid-column:2/4;
+		grid-row:1/2}
+		
+	#abtme_inspiration{grid-column:2/4;
+		grid-row:2/3}
+		
+	#strength{grid-column:2/3;
+		grid-row:3/6;
+		font-size:28px}
+		
+	#str1{grid-column:3/4;
+		grid-row:3/4}
+		
+	#str2{grid-column:3/4;
+		grid-row:4/5}
+		
+	#str3{grid-column:3/4;
+		grid-row:5/6}	
+		
+		
+	#weakness{grid-column:2/3;
+		grid-row:6/8;
+		font-size:26px}
+		
+	#wkn1{grid-column:3/4;
+		grid-row:6/7}
+		
+	#wkn2{grid-column:3/4;
+		grid-row:7/8}
+		
+}
+@media(max-width:768px){
+	#aboutme_main{display:grid;
+	grid-template-columns: 10% 80% 10%;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	font-size:18px}
+	
+	#aboutme_main section{background:#6D8196;
+		margin:5px;
+		padding:0;
+		border:2px solid #363636;}
+
+	#aboutme_main article{background:#6D8196;
+		margin:5px;
+		padding:0;
+		border:2px solid #363636;}
+		
+	#abtme_intro{grid-column:2/3;
+		grid-row:1/2}
+		
+	#abtme_inspiration{grid-column:2/3;
+		grid-row:2/3}
+		
+	#strength{grid-column:2/3;
+		grid-row:3/4;
+		font-size:28px}
+		
+	#str1{grid-column:2/3;
+		grid-row:4/5}
+		
+	#str2{grid-column:2/3;
+		grid-row:5/6}
+		
+	#str3{grid-column:2/3;
+		grid-row:6/7}	
+		
+		
+	#weakness{grid-column:2/3;
+		grid-row:7/8;
+		font-size:26px}
+		
+	#wkn1{grid-column:2/3;
+		grid-row:8/9}
+		
+	#wkn2{grid-column:2/3;
+		grid-row:9/10}
+	
+}
+
+/*css for hobbies*/
+.hobbies_body{font-family:"Story Script";
+	color:#363636}
+	
+#hobbies_outdoor{display:flex;
+	justify-content:space-evenly}
+	
+.hobbies_body header{text-align:center}
+
+.hobbies_body header p{font-size:20px}
+	
+#hobbies_section{display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	}	
+	
+.hobbies_outdoor{display:inline-block;
+	width:40%;
+	vertical-align:top;
+	margin:10px;
+	padding:15px;
+	box-sizing:border-box;
+	font-size:20px}
+	
+.hobbies_outdoor p{width:55%;
+	overflow-wrap:break-word;
+	display:inline-block;
+	vertical-align:top;}
+	
+.hobbies_outdoor img{display:inline-block}
+	
+#hobbies_indoor{margin:0 auto;
+	width:40%;
+	padding:15px;
+	font-size:20px}
+		
+#hobbies_indoor p{width:55%;
+	overflow-wrap:break-word;
+	display:inline-block;
+	vertical-align:top;}
+		
+#hobbies_indoor img{display:inline-block}
+		
+.heading{text-decoration:underline;
+	color:#363636;
+	text-align:center} 
+
+#hobbies_indoor, .hobbies_outdoor{background:#6D8196;
+	border:2px solid #363636}
+
+@media(max-width:1280px){
+	#hobbies_outdoor{display:flex;
+	justify-content:space-evenly}
+	
+	.hobbies_body header{text-align:center}
+
+	.hobbies_body header p{font-size:18px}
+		
+	#hobbies_section{display:flex;
+		flex-direction:column;
+		justify-content:space-evenly;
+		}	
+		
+	.hobbies_outdoor{width:40%;
+		vertical-align:top;
+		margin:0 auto;
+		padding:10px;
+		box-sizing:border-box;
+		font-size:18px}
+		
+	.hobbies_outdoor p{width:55%;
+		overflow-wrap:break-word;
+		vertical-align:top;}
+		
+	.hobbies_outdoor img{display:inline-block}
+		
+	#hobbies_indoor{margin:0 auto;
+		width:40%;
+		padding:10px;
+		font-size:18px}
+			
+	#hobbies_indoor p{width:55%;
+		overflow-wrap:break-word;
+		display:inline-block;
+		vertical-align:top;}
+			
+	#hobbies_indoor img{display:inline-block}
+			
+	.heading{text-decoration:underline;
+		color:#363636;
+		text-align:center} 
+
+	#hobbies_indoor, .hobbies_outdoor{background:#6D8196;
+		border:2px solid #363636}
+
+}
+@media(max-width:768px){
+		#hobbies_outdoor{display:flex;
+	justify-content:space-evenly}
+	
+	.hobbies_body header{text-align:center}
+
+	.hobbies_body header p{font-size:16px}
+		
+	#hobbies_section{display:flex;
+		flex-direction:column;
+		justify-content:space-evenly;
+		}	
+		
+	.hobbies_outdoor{width:60%;
+		vertical-align:top;
+		margin:0 auto;
+		padding:10px;
+		box-sizing:border-box;
+		font-size:18px}
+		
+	.hobbies_outdoor p{width:100%;
+		overflow-wrap:break-word;
+		vertical-align:top;}
+		
+	#hobbies_indoor{margin:0 auto;
+		width:60%;
+		padding:5px;
+		font-size:16px}
+			
+	#hobbies_indoor p{width:100%;
+		overflow-wrap:break-word;
+		vertical-align:top;}
+			
+	.heading{text-decoration:underline;
+		color:#363636;
+		text-align:center} 
+
+	#hobbies_indoor, .hobbies_outdoor{background:#6D8196;
+		border:1px solid #363636}
+
+}
+
+/*css for Education*/
+.education_body header{text-align:center}
+
+#education_main section{width:55%;
+	overflow-wrap:break-word;
+	margin:50px auto;
+	padding:15px;
+	background:#6D8196;
+	border:2px solid #363636;
+	font-size:24px}
+
+/*css for index */
+.index_nav{background:#CBCBCB;
+	padding:10px 0;
+	margin:0;}
